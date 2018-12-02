@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>	
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Filter App</title>
+		<link rel="stylesheet" type="text/css" href="css.css"/>
+		<script src="SimpleImage.js"></script>
+		<script src="js.js"></script>
+	</head>
+	
+	<body id="bg">
+		<div class="div1">
+			<h1>The <b><ins>Filter Web App</ins></b></h1>
+			<p id="topParagraph">A <b>simple</b> <ins>program</ins> to <b><i>composite</i></b> two images<br/> one
+			a <b>foreground</b> that has a <b>green screen</b> Image and another a <b>backgroung</b> Image
+			<br/> into a <b>composite image</b><br/> <b>also</b> having the <ins><b>ability</b></ins> to try <b>four</b> custom made <b>Filters</b></p>
+		</div>
+		<div class="uppercontent">
+			<h1>Image Filtering Section</h1>
+		</div>		
+		<div class="filterbody">
+			<b>Upload an Image:-</b>
+			<input type="file" id="filterFile" multiple="false" accept="image/*" onchange="loadImg()"/>
+			<br/>
+			<hr/>
+			
+			<canvas id="filterCanvas" width="1920px" height="1080px"></canvas>
+			<br/>
+			<input type="button" value="Grayscale" onclick="makeGrayScale()"/>
+			<input type="button" value="Horizontal Rainbow" onclick="makeHorizontalRainbow()"/>
+			<input type="button" value="Vertical rainbow" onclick="makeVerticalRainbow()"/>
+			<input type="button" value="Red" onclick="makeRed()"/>
+			<input type="button" value="Border" onclick="makeBorder()"/>
+			<input type="button" value="Flicker" onclick="makeBlur()"/>
+			<input type="button" value="Reset" onclick="reset()"/>
+		</div>
+		<div class="content">
+			<h1>Composition Section</h1>
+		</div>
+		<h1 id="bgHeader">The Background Image:-</h1>
+		<div class="upload">
+			<b>Background Image:</b> <input type="file" id="bgFile" multiple="false" accept="image/*" onchange="loadBg()"/>
+			Choose a <b>Background image</b> that you want to <b>composite</b> <ins>instead</ins> of the <i>green screen</i> in the <b>foreground image</b>
+		</div>
+		<canvas id="bgCanvas"></canvas>
+		<h1 id="fgHeader">The Foreground Image:-</h1>
+		<div class="upload">
+		<b>Foreground Image:</b> <input type="file" id="fgFile" multiple="false" accept="image/*" onchange="loadFg()"/>
+		Choose a <b>Foreground image</b> that you want to <b>composite</b> <ins>instead</ins> of the <i>green screen</i> with the <b>background image</b>
+		</div>
+		<canvas id="fgCanvas"></canvas>
+		<h1 id="compHeader">The Composite Image:-</h1>
+		<div class="upload">
+		<input type="button" value="Make Composite" onclick="makeComposite()"/>
+		This will <b>Composite The Images</b> removing the <b>Green-Screen</b> <ins>from</ins> <i>Foreground Image</i> and substitute with the <b>background image</b>
+		</div>
+		<canvas id="compCanvas"></canvas>
+		</br>
+		<div class="options">
+			<h1>Page Options</h1>
+			<p>Here <b>you</b> can <b>Change</b> the page's </b>background color</b> using the color picker<br/>
+				Other features to be <b>added</b> <ins><b>Soon</b></ins><br/>Hisham Maged Copyrights</p>
+		</div>
+		<br/>
+		<div id="last">
+		Change Background's Color: <input type="color" value="#4d4d4d" id="clr" onchange="changeBg()"/>
+		</div>
+		
+	</body>	

@@ -1,0 +1,68 @@
+/**
+ * @author ${hisham_maged10}
+ *https://github.com/hisham-maged10
+ * ${WebApps}
+*/
+.div1{
+	background-color:	#B22222;
+	font-family:Courier, new Courier;
+	padding:10px;
+	text-align:center;
+	color:white;
+}
+.options{
+	background-color:#0d525b;
+	color:white;
+	font-family:verdana;
+	text-align:center;
+	padding:10px;
+}
+.content{
+	background-color:cadetBlue;
+	font-family:arial;
+	padding:10px;
+	text-align:center;
+	color:white;
+}
+.filterbody{
+	background-color:white;
+	color:#588b8e;
+	padding:10px;
+	font-family:verdana;
+	font-size:180%;
+}
+.uppercontent{
+	background-color:#f9e26b;
+	padding:10px;
+	font-family:verdana;
+	text-align:center;
+	color:#588b8e;
+}
+#topParagraph{
+	font-size:160%;
+}
+body{
+	background-color:#4d4d4d;
+}
+#bgHeader,#fgHeader,#compHeader{
+	color:white;
+	font-family:arial;
+}
+.upload{
+	background-color:white;
+	color:#4d4d4d;
+	font-family:arial;
+	padding:10px;
+}
+#fgCanvas,#bgCanvas,#compCanvas{
+	width:1500px;
+	height:1080px;
+	border:1px solid #FFFFFF;
+}
+#last{
+	padding:10px 0px 20px 10px;
+	background-color:white;
+	color:#4d4d4d;
+	font-family:verdana;
+	font-size:130%;
+}

@@ -1,8 +1,3 @@
-/**
- * @author ${hisham_maged10}
- *https://github.com/hisham-maged10
- * ${WebApps}
-*/
 var bgImg=null;
 var fgImg=null;
 var ogImg=null;
@@ -151,14 +146,14 @@ function makeBlur()
 	var blur=new SimpleImage(ogImg.getWidth(),ogImg.getHeight());
 	for(var pixel of blurImg.values())
 	{
-		if(Math.random()<=0.5)
+		if(Math.random()<0.5)
 		{
 			blur.setPixel(pixel.getX(),pixel.getY(),pixel);
 		}
 		else
 		{
-			var x=randomRanged(7);
-			var y=randomRanged(7);
+			var x=randomRanged(50);
+			var y=randomRanged(50);
 			do{
 				x--;
 			}while(pixel.getX()+x>=(blurImg.getWidth()-1));
